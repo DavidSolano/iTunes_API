@@ -23,6 +23,7 @@ $(function(){
                     $('#show').append(`
                         <h3>${data.results[i].trackName}</h3>
                         <p>By: ${data.results[i].artistName}</p>
+                        <img src="${data.results[i].artworkUrl100}">
                         <br>
                    `);
                 }
