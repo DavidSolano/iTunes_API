@@ -19,7 +19,7 @@ $(function(){
             // function to call when a result is returned
             function(data){
                 // data is what you see in postman
-                for(i in data.results){
+                for(var i = 1; i < data.results.length; i++){
                     $('#show').append(`
                         <div class="card" style="width: 18rem;">
                             <img src="${data.results[i].artworkUrl100}" class="card-img-top" alt="image artwork">
