@@ -1,0 +1,16 @@
+#show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label{
+    padding: .5rem .5rem;
+}

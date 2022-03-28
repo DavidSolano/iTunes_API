@@ -21,10 +21,14 @@ $(function(){
                 // data is what you see in postman
                 for(i in data.results){
                     $('#show').append(`
-                        <h3>${data.results[i].trackName}</h3>
-                        <p>By: ${data.results[i].artistName}</p>
-                        <img src="${data.results[i].artworkUrl100}">
-                        <br>
+                        <div class="card" style="width: 18rem;">
+                            <img src="${data.results[i].artworkUrl100}" class="card-img-top" alt="image artwork">
+                            <div class="card-body">
+                                <h5>${data.results[i].trackName}</h5>
+                                <p class="card-text">By: ${data.results[i].artistName}</p>
+                            </div>
+                        </div>
+                        <hr>
                    `);
                 }
             },
@@ -35,3 +39,4 @@ $(function(){
 
     // this code after the request would run before the results are returned
 })
+
